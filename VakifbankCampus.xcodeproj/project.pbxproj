@@ -7,41 +7,346 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26945CA7B417F14229E7F20D /* Pods_VakifbankCampus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195E1880777145345567BE15 /* Pods_VakifbankCampus.framework */; };
+		F5047A5D2C804C0100261732 /* PersonInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5047A5C2C804C0100261732 /* PersonInfoViewModel.swift */; };
+		F5047A5F2C804C1A00261732 /* ServicePersonInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5047A5E2C804C1A00261732 /* ServicePersonInfoPage.swift */; };
+		F5047A622C8067E300261732 /* ChangePasswordAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5047A612C8067E300261732 /* ChangePasswordAlert.swift */; };
+		F5047A642C806F3C00261732 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5047A632C806F3C00261732 /* ChangePasswordViewModel.swift */; };
+		F50772DE2C7C72950089B423 /* TakeBookWithQrAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50772DD2C7C72950089B423 /* TakeBookWithQrAlert.swift */; };
+		F50772E22C7C736E0089B423 /* BookAlertViewSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50772E12C7C736E0089B423 /* BookAlertViewSettingsVC.swift */; };
+		F50772E52C7C7FC30089B423 /* ServiceTakeBookWithQr.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50772E42C7C7FC30089B423 /* ServiceTakeBookWithQr.swift */; };
+		F51E6FA32C771167006F32D2 /* RefectoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E6FA22C771167006F32D2 /* RefectoryViewModel.swift */; };
+		F51E6FA52C771178006F32D2 /* ServiceRefectoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E6FA42C771178006F32D2 /* ServiceRefectoryPage.swift */; };
+		F51E6FA82C772DCC006F32D2 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E6FA72C772DCC006F32D2 /* QRScannerController.swift */; };
+		F53A5BC92C80AC8C00B20EB2 /* AnimationQR.json in Resources */ = {isa = PBXBuildFile; fileRef = F53A5BC82C80AC8C00B20EB2 /* AnimationQR.json */; };
+		F54CA0662C859FEE0028F791 /* VakifbankCampusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CA0652C859FEE0028F791 /* VakifbankCampusTests.swift */; };
+		F54CA06F2C85F47A0028F791 /* SignInViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CA06E2C85F47A0028F791 /* SignInViewModelTest.swift */; };
+		F54CA0712C85F7800028F791 /* MockServiceSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CA0702C85F7800028F791 /* MockServiceSignIn.swift */; };
+		F54CA0732C85F8C20028F791 /* MockSingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CA0722C85F8C20028F791 /* MockSingInViewController.swift */; };
+		F575173C2C7F3B5F005E17B4 /* LoanedBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F575173B2C7F3B5F005E17B4 /* LoanedBookModel.swift */; };
+		F575173F2C81F7F6005E17B4 /* InfoAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F575173E2C81F7F6005E17B4 /* InfoAlert.swift */; };
+		F5C10CD02C75BE3600575E1E /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C10CCF2C75BE3600575E1E /* HomePageViewModel.swift */; };
+		F5C10CD22C75BE4900575E1E /* ServiceHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C10CD12C75BE4900575E1E /* ServiceHomePage.swift */; };
+		F5C10CD52C75D25600575E1E /* Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F5C10CD42C75D25600575E1E /* Loading.json */; };
+		F5C10CD82C75D85900575E1E /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C10CD72C75D85900575E1E /* UserInfoModel.swift */; };
+		F5C10CDA2C76025700575E1E /* FoodMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C10CD92C76025700575E1E /* FoodMenuModel.swift */; };
+		F5C10CDD2C7606DE00575E1E /* FetchFoodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C10CDC2C7606DE00575E1E /* FetchFoodExtension.swift */; };
+		F5C10CDF2C760ADA00575E1E /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C10CDE2C760ADA00575E1E /* NewsModel.swift */; };
+		F5C10CE22C760DCD00575E1E /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C10CE12C760DCD00575E1E /* NewsCollectionViewCell.swift */; };
+		F5CEC76A2C74B16300E1189A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CEC7692C74B16300E1189A /* SignInViewModel.swift */; };
+		F5CEC76C2C74BC3C00E1189A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5CEC76B2C74BC3C00E1189A /* GoogleService-Info.plist */; };
+		F5CEC7732C74C8E300E1189A /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CEC7722C74C8E300E1189A /* PersonInfoViewController.swift */; };
+		F5CEC7752C74C8F000E1189A /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CEC7742C74C8F000E1189A /* LibraryViewController.swift */; };
+		F5CEC7772C74C8FE00E1189A /* RefectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CEC7762C74C8FE00E1189A /* RefectoryViewController.swift */; };
+		F5CEC7792C74C90900E1189A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CEC7782C74C90900E1189A /* HomeViewController.swift */; };
+		F5CEC77B2C74C92A00E1189A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CEC77A2C74C92A00E1189A /* TabBarController.swift */; };
+		F5CEC77F2C74CD6800E1189A /* ServiceSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CEC77E2C74CD6800E1189A /* ServiceSignIn.swift */; };
 		F5EE3FA42C7494E600DC10B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FA32C7494E600DC10B9 /* AppDelegate.swift */; };
 		F5EE3FA62C7494E600DC10B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FA52C7494E600DC10B9 /* SceneDelegate.swift */; };
-		F5EE3FA82C7494E600DC10B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FA72C7494E600DC10B9 /* ViewController.swift */; };
-		F5EE3FAB2C7494E600DC10B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EE3FA92C7494E600DC10B9 /* Main.storyboard */; };
+		F5EE3FA82C7494E600DC10B9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FA72C7494E600DC10B9 /* SignInViewController.swift */; };
 		F5EE3FAD2C7494E700DC10B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE3FAC2C7494E700DC10B9 /* Assets.xcassets */; };
 		F5EE3FB02C7494E700DC10B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EE3FAE2C7494E700DC10B9 /* LaunchScreen.storyboard */; };
+		F5EE3FB92C74A46400DC10B9 /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FB82C74A46400DC10B9 /* ImageViews.swift */; };
+		F5EE3FBB2C74A48D00DC10B9 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FBA2C74A48D00DC10B9 /* Labels.swift */; };
+		F5EE3FBD2C74A4B600DC10B9 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FBC2C74A4B600DC10B9 /* TextFields.swift */; };
+		F5EE3FBF2C74A4F600DC10B9 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FBE2C74A4F600DC10B9 /* Views.swift */; };
+		F5EE3FC12C74A51000DC10B9 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FC02C74A51000DC10B9 /* ToastMessage.swift */; };
+		F5EE3FC42C74A54C00DC10B9 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE3FC32C74A54C00DC10B9 /* ViewExtension.swift */; };
+		F5F0E0002C7DF42400B93ED8 /* ReserveBookAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0DFFF2C7DF42400B93ED8 /* ReserveBookAlert.swift */; };
+		F5F0E0022C7E0B5D00B93ED8 /* ReserveBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0E0012C7E0B5D00B93ED8 /* ReserveBookViewModel.swift */; };
+		F5F4B0A62C876E110044A0D4 /* HomePageViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B0A52C876E110044A0D4 /* HomePageViewModelTest.swift */; };
+		F5F4B0A82C879BDB0044A0D4 /* MockServiceHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B0A72C879BDB0044A0D4 /* MockServiceHomePage.swift */; };
+		F5F4B0AA2C879C100044A0D4 /* MockHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B0A92C879C100044A0D4 /* MockHomePageView.swift */; };
+		F5F4B0AD2C879E660044A0D4 /* PersonInfoViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B0AC2C879E660044A0D4 /* PersonInfoViewModelTest.swift */; };
+		F5F4B0AF2C87A0450044A0D4 /* MockPersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B0AE2C87A0450044A0D4 /* MockPersonInfoView.swift */; };
+		F5F4B0B12C87A1750044A0D4 /* MockServicePersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B0B02C87A1750044A0D4 /* MockServicePersonInfo.swift */; };
+		F5FDA18A2C78638200D28CC1 /* GetToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDA1892C78638200D28CC1 /* GetToday.swift */; };
+		F5FDA18C2C7875D100D28CC1 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDA18B2C7875D100D28CC1 /* LibraryViewModel.swift */; };
+		F5FDA18E2C7875E100D28CC1 /* ServiceLibraryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDA18D2C7875E100D28CC1 /* ServiceLibraryPage.swift */; };
+		F5FDA1902C7878AA00D28CC1 /* BooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDA18F2C7878AA00D28CC1 /* BooksCollectionViewCell.swift */; };
+		F5FDA1922C78798300D28CC1 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDA1912C78798300D28CC1 /* BooksModel.swift */; };
+		F5FDA1952C78AF7E00D28CC1 /* BookDetailsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDA1942C78AF7E00D28CC1 /* BookDetailsAlert.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F54CA0672C859FEE0028F791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EE3F982C7494E600DC10B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5EE3F9F2C7494E600DC10B9;
+			remoteInfo = VakifbankCampus;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		195E1880777145345567BE15 /* Pods_VakifbankCampus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VakifbankCampus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		534064D29003BD37D2D9670A /* Pods-VakifbankCampus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VakifbankCampus.debug.xcconfig"; path = "Target Support Files/Pods-VakifbankCampus/Pods-VakifbankCampus.debug.xcconfig"; sourceTree = "<group>"; };
+		54CE89E247C52FA0DE59247A /* Pods-VakifbankCampus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VakifbankCampus.release.xcconfig"; path = "Target Support Files/Pods-VakifbankCampus/Pods-VakifbankCampus.release.xcconfig"; sourceTree = "<group>"; };
+		F5047A5C2C804C0100261732 /* PersonInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewModel.swift; sourceTree = "<group>"; };
+		F5047A5E2C804C1A00261732 /* ServicePersonInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePersonInfoPage.swift; sourceTree = "<group>"; };
+		F5047A612C8067E300261732 /* ChangePasswordAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordAlert.swift; sourceTree = "<group>"; };
+		F5047A632C806F3C00261732 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		F50772DD2C7C72950089B423 /* TakeBookWithQrAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeBookWithQrAlert.swift; sourceTree = "<group>"; };
+		F50772E12C7C736E0089B423 /* BookAlertViewSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAlertViewSettingsVC.swift; sourceTree = "<group>"; };
+		F50772E42C7C7FC30089B423 /* ServiceTakeBookWithQr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTakeBookWithQr.swift; sourceTree = "<group>"; };
+		F51E6FA22C771167006F32D2 /* RefectoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefectoryViewModel.swift; sourceTree = "<group>"; };
+		F51E6FA42C771178006F32D2 /* ServiceRefectoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRefectoryPage.swift; sourceTree = "<group>"; };
+		F51E6FA72C772DCC006F32D2 /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		F53A5BC82C80AC8C00B20EB2 /* AnimationQR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimationQR.json; sourceTree = "<group>"; };
+		F54CA0632C859FEE0028F791 /* VakifbankCampusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VakifbankCampusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54CA0652C859FEE0028F791 /* VakifbankCampusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VakifbankCampusTests.swift; sourceTree = "<group>"; };
+		F54CA06E2C85F47A0028F791 /* SignInViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTest.swift; sourceTree = "<group>"; };
+		F54CA0702C85F7800028F791 /* MockServiceSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceSignIn.swift; sourceTree = "<group>"; };
+		F54CA0722C85F8C20028F791 /* MockSingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSingInViewController.swift; sourceTree = "<group>"; };
+		F575173B2C7F3B5F005E17B4 /* LoanedBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanedBookModel.swift; sourceTree = "<group>"; };
+		F575173E2C81F7F6005E17B4 /* InfoAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAlert.swift; sourceTree = "<group>"; };
+		F5C10CCF2C75BE3600575E1E /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		F5C10CD12C75BE4900575E1E /* ServiceHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHomePage.swift; sourceTree = "<group>"; };
+		F5C10CD42C75D25600575E1E /* Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading.json; sourceTree = "<group>"; };
+		F5C10CD72C75D85900575E1E /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		F5C10CD92C76025700575E1E /* FoodMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMenuModel.swift; sourceTree = "<group>"; };
+		F5C10CDC2C7606DE00575E1E /* FetchFoodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFoodExtension.swift; sourceTree = "<group>"; };
+		F5C10CDE2C760ADA00575E1E /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		F5C10CE12C760DCD00575E1E /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5CEC7692C74B16300E1189A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		F5CEC76B2C74BC3C00E1189A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5CEC7722C74C8E300E1189A /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		F5CEC7742C74C8F000E1189A /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		F5CEC7762C74C8FE00E1189A /* RefectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefectoryViewController.swift; sourceTree = "<group>"; };
+		F5CEC7782C74C90900E1189A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F5CEC77A2C74C92A00E1189A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F5CEC77E2C74CD6800E1189A /* ServiceSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSignIn.swift; sourceTree = "<group>"; };
 		F5EE3FA02C7494E600DC10B9 /* VakifbankCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VakifbankCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EE3FA32C7494E600DC10B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EE3FA52C7494E600DC10B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5EE3FA72C7494E600DC10B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5EE3FAA2C7494E600DC10B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5EE3FA72C7494E600DC10B9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F5EE3FAC2C7494E700DC10B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EE3FAF2C7494E700DC10B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5EE3FB12C7494E700DC10B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EE3FB82C74A46400DC10B9 /* ImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViews.swift; sourceTree = "<group>"; };
+		F5EE3FBA2C74A48D00DC10B9 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		F5EE3FBC2C74A4B600DC10B9 /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		F5EE3FBE2C74A4F600DC10B9 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		F5EE3FC02C74A51000DC10B9 /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		F5EE3FC32C74A54C00DC10B9 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		F5F0DFFF2C7DF42400B93ED8 /* ReserveBookAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveBookAlert.swift; sourceTree = "<group>"; };
+		F5F0E0012C7E0B5D00B93ED8 /* ReserveBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveBookViewModel.swift; sourceTree = "<group>"; };
+		F5F4B0A52C876E110044A0D4 /* HomePageViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModelTest.swift; sourceTree = "<group>"; };
+		F5F4B0A72C879BDB0044A0D4 /* MockServiceHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceHomePage.swift; sourceTree = "<group>"; };
+		F5F4B0A92C879C100044A0D4 /* MockHomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomePageView.swift; sourceTree = "<group>"; };
+		F5F4B0AC2C879E660044A0D4 /* PersonInfoViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewModelTest.swift; sourceTree = "<group>"; };
+		F5F4B0AE2C87A0450044A0D4 /* MockPersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersonInfoView.swift; sourceTree = "<group>"; };
+		F5F4B0B02C87A1750044A0D4 /* MockServicePersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServicePersonInfo.swift; sourceTree = "<group>"; };
+		F5FDA1892C78638200D28CC1 /* GetToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetToday.swift; sourceTree = "<group>"; };
+		F5FDA18B2C7875D100D28CC1 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		F5FDA18D2C7875E100D28CC1 /* ServiceLibraryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLibraryPage.swift; sourceTree = "<group>"; };
+		F5FDA18F2C7878AA00D28CC1 /* BooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5FDA1912C78798300D28CC1 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
+		F5FDA1942C78AF7E00D28CC1 /* BookDetailsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F5EE3F9D2C7494E600DC10B9 /* Frameworks */ = {
+		F54CA0602C859FEE0028F791 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5EE3F9D2C7494E600DC10B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26945CA7B417F14229E7F20D /* Pods_VakifbankCampus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		804C6714061D6E7D293E0B88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				534064D29003BD37D2D9670A /* Pods-VakifbankCampus.debug.xcconfig */,
+				54CE89E247C52FA0DE59247A /* Pods-VakifbankCampus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5047A602C8067C700261732 /* ChangePasswordAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F5047A612C8067E300261732 /* ChangePasswordAlert.swift */,
+				F5047A632C806F3C00261732 /* ChangePasswordViewModel.swift */,
+			);
+			path = ChangePasswordAlert;
+			sourceTree = "<group>";
+		};
+		F50772E02C7C734B0089B423 /* BookAlertViewSettings */ = {
+			isa = PBXGroup;
+			children = (
+				F50772E12C7C736E0089B423 /* BookAlertViewSettingsVC.swift */,
+			);
+			path = BookAlertViewSettings;
+			sourceTree = "<group>";
+		};
+		F50772E32C7C7F9B0089B423 /* TakeBookWithQr */ = {
+			isa = PBXGroup;
+			children = (
+				F50772DD2C7C72950089B423 /* TakeBookWithQrAlert.swift */,
+				F50772E42C7C7FC30089B423 /* ServiceTakeBookWithQr.swift */,
+			);
+			path = TakeBookWithQr;
+			sourceTree = "<group>";
+		};
+		F51E6FA62C772DA7006F32D2 /* QRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				F51E6FA72C772DCC006F32D2 /* QRScannerController.swift */,
+			);
+			path = QRScanner;
+			sourceTree = "<group>";
+		};
+		F54CA0642C859FEE0028F791 /* VakifbankCampusTests */ = {
+			isa = PBXGroup;
+			children = (
+				F54CA06C2C85A0D50028F791 /* Modules */,
+				F54CA0652C859FEE0028F791 /* VakifbankCampusTests.swift */,
+			);
+			path = VakifbankCampusTests;
+			sourceTree = "<group>";
+		};
+		F54CA06C2C85A0D50028F791 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4B0AB2C879E4B0044A0D4 /* PersonInfo */,
+				F5F4B0A42C876DF40044A0D4 /* Home */,
+				F54CA06D2C85A0E20028F791 /* SingIn */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F54CA06D2C85A0E20028F791 /* SingIn */ = {
+			isa = PBXGroup;
+			children = (
+				F54CA06E2C85F47A0028F791 /* SignInViewModelTest.swift */,
+				F54CA0702C85F7800028F791 /* MockServiceSignIn.swift */,
+				F54CA0722C85F8C20028F791 /* MockSingInViewController.swift */,
+			);
+			path = SingIn;
+			sourceTree = "<group>";
+		};
+		F575173D2C81F7DD005E17B4 /* InfoAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F575173E2C81F7F6005E17B4 /* InfoAlert.swift */,
+			);
+			path = InfoAlert;
+			sourceTree = "<group>";
+		};
+		F5C10CD32C75D23F00575E1E /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F5C10CD42C75D25600575E1E /* Loading.json */,
+				F53A5BC82C80AC8C00B20EB2 /* AnimationQR.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		F5C10CD62C75D84300575E1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5C10CD72C75D85900575E1E /* UserInfoModel.swift */,
+				F5C10CD92C76025700575E1E /* FoodMenuModel.swift */,
+				F5C10CDE2C760ADA00575E1E /* NewsModel.swift */,
+				F5FDA1912C78798300D28CC1 /* BooksModel.swift */,
+				F575173B2C7F3B5F005E17B4 /* LoanedBookModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5C10CE02C760DA000575E1E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5C10CE12C760DCD00575E1E /* NewsCollectionViewCell.swift */,
+				F5FDA18F2C7878AA00D28CC1 /* BooksCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F5CEC7682C74B15600E1189A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F5FDA1932C78AD2200D28CC1 /* Alert */,
+				F51E6FA62C772DA7006F32D2 /* QRScanner */,
+				F5C10CE02C760DA000575E1E /* Cell */,
+				F5C10CD62C75D84300575E1E /* Models */,
+				F5CEC76D2C74C84D00E1189A /* TabBarController */,
+				F5CEC7712C74C89F00E1189A /* PersonInfoPage */,
+				F5CEC7702C74C89300E1189A /* LibraryPage */,
+				F5CEC76F2C74C87F00E1189A /* RefectoryPage */,
+				F5CEC76E2C74C87800E1189A /* HomePage */,
+				F5EE3FC62C74A62E00DC10B9 /* SignIn */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F5CEC76D2C74C84D00E1189A /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F5CEC77A2C74C92A00E1189A /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		F5CEC76E2C74C87800E1189A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				F5CEC7782C74C90900E1189A /* HomeViewController.swift */,
+				F5C10CCF2C75BE3600575E1E /* HomePageViewModel.swift */,
+				F5C10CD12C75BE4900575E1E /* ServiceHomePage.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		F5CEC76F2C74C87F00E1189A /* RefectoryPage */ = {
+			isa = PBXGroup;
+			children = (
+				F5CEC7762C74C8FE00E1189A /* RefectoryViewController.swift */,
+				F51E6FA22C771167006F32D2 /* RefectoryViewModel.swift */,
+				F51E6FA42C771178006F32D2 /* ServiceRefectoryPage.swift */,
+			);
+			path = RefectoryPage;
+			sourceTree = "<group>";
+		};
+		F5CEC7702C74C89300E1189A /* LibraryPage */ = {
+			isa = PBXGroup;
+			children = (
+				F5CEC7742C74C8F000E1189A /* LibraryViewController.swift */,
+				F5FDA18B2C7875D100D28CC1 /* LibraryViewModel.swift */,
+				F5FDA18D2C7875E100D28CC1 /* ServiceLibraryPage.swift */,
+			);
+			path = LibraryPage;
+			sourceTree = "<group>";
+		};
+		F5CEC7712C74C89F00E1189A /* PersonInfoPage */ = {
+			isa = PBXGroup;
+			children = (
+				F5CEC7722C74C8E300E1189A /* PersonInfoViewController.swift */,
+				F5047A5C2C804C0100261732 /* PersonInfoViewModel.swift */,
+				F5047A5E2C804C1A00261732 /* ServicePersonInfoPage.swift */,
+			);
+			path = PersonInfoPage;
+			sourceTree = "<group>";
+		};
 		F5EE3F972C7494E600DC10B9 = {
 			isa = PBXGroup;
 			children = (
 				F5EE3FA22C7494E600DC10B9 /* VakifbankCampus */,
+				F54CA0642C859FEE0028F791 /* VakifbankCampusTests */,
 				F5EE3FA12C7494E600DC10B9 /* Products */,
+				804C6714061D6E7D293E0B88 /* Pods */,
+				FE7836F214055EE6F4CAC498 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				F5EE3FA02C7494E600DC10B9 /* VakifbankCampus.app */,
+				F54CA0632C859FEE0028F791 /* VakifbankCampusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,27 +362,148 @@
 		F5EE3FA22C7494E600DC10B9 /* VakifbankCampus */ = {
 			isa = PBXGroup;
 			children = (
-				F5EE3FA32C7494E600DC10B9 /* AppDelegate.swift */,
-				F5EE3FA52C7494E600DC10B9 /* SceneDelegate.swift */,
-				F5EE3FA72C7494E600DC10B9 /* ViewController.swift */,
-				F5EE3FA92C7494E600DC10B9 /* Main.storyboard */,
-				F5EE3FAC2C7494E700DC10B9 /* Assets.xcassets */,
-				F5EE3FAE2C7494E700DC10B9 /* LaunchScreen.storyboard */,
+				F5CEC7682C74B15600E1189A /* Modules */,
+				F5EE3FC22C74A52500DC10B9 /* Extensions */,
+				F5C10CD32C75D23F00575E1E /* Animations */,
+				F5EE3FB72C74A43000DC10B9 /* Components */,
+				F5EE3FC52C74A60B00DC10B9 /* File */,
 				F5EE3FB12C7494E700DC10B9 /* Info.plist */,
+				F5CEC76B2C74BC3C00E1189A /* GoogleService-Info.plist */,
 			);
 			path = VakifbankCampus;
+			sourceTree = "<group>";
+		};
+		F5EE3FB72C74A43000DC10B9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F5EE3FB82C74A46400DC10B9 /* ImageViews.swift */,
+				F5EE3FBA2C74A48D00DC10B9 /* Labels.swift */,
+				F5EE3FBC2C74A4B600DC10B9 /* TextFields.swift */,
+				F5EE3FBE2C74A4F600DC10B9 /* Views.swift */,
+				F5EE3FC02C74A51000DC10B9 /* ToastMessage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F5EE3FC22C74A52500DC10B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5EE3FC32C74A54C00DC10B9 /* ViewExtension.swift */,
+				F5C10CDC2C7606DE00575E1E /* FetchFoodExtension.swift */,
+				F5FDA1892C78638200D28CC1 /* GetToday.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5EE3FC52C74A60B00DC10B9 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				F5EE3FA32C7494E600DC10B9 /* AppDelegate.swift */,
+				F5EE3FA52C7494E600DC10B9 /* SceneDelegate.swift */,
+				F5EE3FAE2C7494E700DC10B9 /* LaunchScreen.storyboard */,
+				F5EE3FAC2C7494E700DC10B9 /* Assets.xcassets */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		F5EE3FC62C74A62E00DC10B9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F5CEC7692C74B16300E1189A /* SignInViewModel.swift */,
+				F5EE3FA72C7494E600DC10B9 /* SignInViewController.swift */,
+				F5CEC77E2C74CD6800E1189A /* ServiceSignIn.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		F5F0DFFD2C7DA95900B93ED8 /* BooksDetailsAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F5FDA1942C78AF7E00D28CC1 /* BookDetailsAlert.swift */,
+			);
+			path = BooksDetailsAlert;
+			sourceTree = "<group>";
+		};
+		F5F0DFFE2C7DF3F000B93ED8 /* ReserveBooksAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F5F0DFFF2C7DF42400B93ED8 /* ReserveBookAlert.swift */,
+				F5F0E0012C7E0B5D00B93ED8 /* ReserveBookViewModel.swift */,
+			);
+			path = ReserveBooksAlert;
+			sourceTree = "<group>";
+		};
+		F5F4B0A42C876DF40044A0D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4B0A52C876E110044A0D4 /* HomePageViewModelTest.swift */,
+				F5F4B0A72C879BDB0044A0D4 /* MockServiceHomePage.swift */,
+				F5F4B0A92C879C100044A0D4 /* MockHomePageView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F5F4B0AB2C879E4B0044A0D4 /* PersonInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4B0AC2C879E660044A0D4 /* PersonInfoViewModelTest.swift */,
+				F5F4B0AE2C87A0450044A0D4 /* MockPersonInfoView.swift */,
+				F5F4B0B02C87A1750044A0D4 /* MockServicePersonInfo.swift */,
+			);
+			path = PersonInfo;
+			sourceTree = "<group>";
+		};
+		F5FDA1932C78AD2200D28CC1 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				F5047A602C8067C700261732 /* ChangePasswordAlert */,
+				F575173D2C81F7DD005E17B4 /* InfoAlert */,
+				F5F0DFFE2C7DF3F000B93ED8 /* ReserveBooksAlert */,
+				F5F0DFFD2C7DA95900B93ED8 /* BooksDetailsAlert */,
+				F50772E32C7C7F9B0089B423 /* TakeBookWithQr */,
+				F50772E02C7C734B0089B423 /* BookAlertViewSettings */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		FE7836F214055EE6F4CAC498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				195E1880777145345567BE15 /* Pods_VakifbankCampus.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F54CA0622C859FEE0028F791 /* VakifbankCampusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54CA06B2C859FEE0028F791 /* Build configuration list for PBXNativeTarget "VakifbankCampusTests" */;
+			buildPhases = (
+				F54CA05F2C859FEE0028F791 /* Sources */,
+				F54CA0602C859FEE0028F791 /* Frameworks */,
+				F54CA0612C859FEE0028F791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F54CA0682C859FEE0028F791 /* PBXTargetDependency */,
+			);
+			name = VakifbankCampusTests;
+			productName = VakifbankCampusTests;
+			productReference = F54CA0632C859FEE0028F791 /* VakifbankCampusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F5EE3F9F2C7494E600DC10B9 /* VakifbankCampus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5EE3FB42C7494E700DC10B9 /* Build configuration list for PBXNativeTarget "VakifbankCampus" */;
 			buildPhases = (
+				15A48EB657190B58DD09332F /* [CP] Check Pods Manifest.lock */,
 				F5EE3F9C2C7494E600DC10B9 /* Sources */,
 				F5EE3F9D2C7494E600DC10B9 /* Frameworks */,
 				F5EE3F9E2C7494E600DC10B9 /* Resources */,
+				C5E37D16D3FC7B8CA41A0A08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +524,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					F54CA0622C859FEE0028F791 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F5EE3F9F2C7494E600DC10B9;
+					};
 					F5EE3F9F2C7494E600DC10B9 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -116,45 +547,154 @@
 			projectRoot = "";
 			targets = (
 				F5EE3F9F2C7494E600DC10B9 /* VakifbankCampus */,
+				F54CA0622C859FEE0028F791 /* VakifbankCampusTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F54CA0612C859FEE0028F791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5EE3F9E2C7494E600DC10B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F5EE3FB02C7494E700DC10B9 /* LaunchScreen.storyboard in Resources */,
 				F5EE3FAD2C7494E700DC10B9 /* Assets.xcassets in Resources */,
-				F5EE3FAB2C7494E600DC10B9 /* Main.storyboard in Resources */,
+				F53A5BC92C80AC8C00B20EB2 /* AnimationQR.json in Resources */,
+				F5C10CD52C75D25600575E1E /* Loading.json in Resources */,
+				F5CEC76C2C74BC3C00E1189A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15A48EB657190B58DD09332F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VakifbankCampus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5E37D16D3FC7B8CA41A0A08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VakifbankCampus/Pods-VakifbankCampus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VakifbankCampus/Pods-VakifbankCampus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VakifbankCampus/Pods-VakifbankCampus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F54CA05F2C859FEE0028F791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54CA0662C859FEE0028F791 /* VakifbankCampusTests.swift in Sources */,
+				F54CA0712C85F7800028F791 /* MockServiceSignIn.swift in Sources */,
+				F54CA0732C85F8C20028F791 /* MockSingInViewController.swift in Sources */,
+				F5F4B0A82C879BDB0044A0D4 /* MockServiceHomePage.swift in Sources */,
+				F5F4B0A62C876E110044A0D4 /* HomePageViewModelTest.swift in Sources */,
+				F5F4B0AA2C879C100044A0D4 /* MockHomePageView.swift in Sources */,
+				F5F4B0B12C87A1750044A0D4 /* MockServicePersonInfo.swift in Sources */,
+				F54CA06F2C85F47A0028F791 /* SignInViewModelTest.swift in Sources */,
+				F5F4B0AF2C87A0450044A0D4 /* MockPersonInfoView.swift in Sources */,
+				F5F4B0AD2C879E660044A0D4 /* PersonInfoViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5EE3F9C2C7494E600DC10B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5EE3FA82C7494E600DC10B9 /* ViewController.swift in Sources */,
+				F5EE3FC42C74A54C00DC10B9 /* ViewExtension.swift in Sources */,
+				F5047A642C806F3C00261732 /* ChangePasswordViewModel.swift in Sources */,
+				F5C10CD02C75BE3600575E1E /* HomePageViewModel.swift in Sources */,
+				F5EE3FB92C74A46400DC10B9 /* ImageViews.swift in Sources */,
+				F5EE3FBB2C74A48D00DC10B9 /* Labels.swift in Sources */,
+				F50772DE2C7C72950089B423 /* TakeBookWithQrAlert.swift in Sources */,
+				F5FDA1922C78798300D28CC1 /* BooksModel.swift in Sources */,
+				F5CEC77B2C74C92A00E1189A /* TabBarController.swift in Sources */,
+				F5EE3FA82C7494E600DC10B9 /* SignInViewController.swift in Sources */,
+				F5C10CDF2C760ADA00575E1E /* NewsModel.swift in Sources */,
+				F5FDA18A2C78638200D28CC1 /* GetToday.swift in Sources */,
+				F5CEC7772C74C8FE00E1189A /* RefectoryViewController.swift in Sources */,
+				F5CEC7792C74C90900E1189A /* HomeViewController.swift in Sources */,
+				F5F0E0002C7DF42400B93ED8 /* ReserveBookAlert.swift in Sources */,
+				F5C10CDA2C76025700575E1E /* FoodMenuModel.swift in Sources */,
+				F51E6FA52C771178006F32D2 /* ServiceRefectoryPage.swift in Sources */,
+				F51E6FA82C772DCC006F32D2 /* QRScannerController.swift in Sources */,
+				F51E6FA32C771167006F32D2 /* RefectoryViewModel.swift in Sources */,
+				F5047A622C8067E300261732 /* ChangePasswordAlert.swift in Sources */,
+				F5FDA18C2C7875D100D28CC1 /* LibraryViewModel.swift in Sources */,
+				F5CEC77F2C74CD6800E1189A /* ServiceSignIn.swift in Sources */,
+				F5C10CDD2C7606DE00575E1E /* FetchFoodExtension.swift in Sources */,
+				F5CEC76A2C74B16300E1189A /* SignInViewModel.swift in Sources */,
+				F5CEC7732C74C8E300E1189A /* PersonInfoViewController.swift in Sources */,
+				F5EE3FBF2C74A4F600DC10B9 /* Views.swift in Sources */,
+				F50772E52C7C7FC30089B423 /* ServiceTakeBookWithQr.swift in Sources */,
 				F5EE3FA42C7494E600DC10B9 /* AppDelegate.swift in Sources */,
+				F5EE3FC12C74A51000DC10B9 /* ToastMessage.swift in Sources */,
 				F5EE3FA62C7494E600DC10B9 /* SceneDelegate.swift in Sources */,
+				F5047A5D2C804C0100261732 /* PersonInfoViewModel.swift in Sources */,
+				F5F0E0022C7E0B5D00B93ED8 /* ReserveBookViewModel.swift in Sources */,
+				F5FDA1902C7878AA00D28CC1 /* BooksCollectionViewCell.swift in Sources */,
+				F575173C2C7F3B5F005E17B4 /* LoanedBookModel.swift in Sources */,
+				F50772E22C7C736E0089B423 /* BookAlertViewSettingsVC.swift in Sources */,
+				F5C10CE22C760DCD00575E1E /* NewsCollectionViewCell.swift in Sources */,
+				F5FDA1952C78AF7E00D28CC1 /* BookDetailsAlert.swift in Sources */,
+				F575173F2C81F7F6005E17B4 /* InfoAlert.swift in Sources */,
+				F5C10CD22C75BE4900575E1E /* ServiceHomePage.swift in Sources */,
+				F5FDA18E2C7875E100D28CC1 /* ServiceLibraryPage.swift in Sources */,
+				F5047A5F2C804C1A00261732 /* ServicePersonInfoPage.swift in Sources */,
+				F5CEC7752C74C8F000E1189A /* LibraryViewController.swift in Sources */,
+				F5EE3FBD2C74A4B600DC10B9 /* TextFields.swift in Sources */,
+				F5C10CD82C75D85900575E1E /* UserInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		F5EE3FA92C7494E600DC10B9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5EE3FAA2C7494E600DC10B9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		F54CA0682C859FEE0028F791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5EE3F9F2C7494E600DC10B9 /* VakifbankCampus */;
+			targetProxy = F54CA0672C859FEE0028F791 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		F5EE3FAE2C7494E700DC10B9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +706,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F54CA0692C859FEE0028F791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B33G8K99J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UmutErol.VakifbankCampusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VakifbankCampus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VakifbankCampus";
+			};
+			name = Debug;
+		};
+		F54CA06A2C859FEE0028F791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B33G8K99J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UmutErol.VakifbankCampusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VakifbankCampus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VakifbankCampus";
+			};
+			name = Release;
+		};
 		F5EE3FB22C7494E700DC10B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +858,7 @@
 		};
 		F5EE3FB52C7494E700DC10B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534064D29003BD37D2D9670A /* Pods-VakifbankCampus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,10 +868,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VakifbankCampus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +888,7 @@
 		};
 		F5EE3FB62C7494E700DC10B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CE89E247C52FA0DE59247A /* Pods-VakifbankCampus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,10 +898,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VakifbankCampus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +919,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F54CA06B2C859FEE0028F791 /* Build configuration list for PBXNativeTarget "VakifbankCampusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54CA0692C859FEE0028F791 /* Debug */,
+				F54CA06A2C859FEE0028F791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F5EE3F9B2C7494E600DC10B9 /* Build configuration list for PBXProject "VakifbankCampus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

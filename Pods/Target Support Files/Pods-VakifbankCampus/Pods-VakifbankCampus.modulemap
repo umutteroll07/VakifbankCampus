@@ -1,0 +1,6 @@
+framework module Pods_VakifbankCampus {
+  umbrella header "Pods-VakifbankCampus-umbrella.h"
+
+  export *
+  module * { export * }
+}
